@@ -73,8 +73,8 @@ const Equipment = () => {
   ];
 
   return (
-    <div className="max-w-[1450px] mx-auto py-[100px] px-[12px] lg:px-[30px] 2xl:px-[0px] font-global">
-      <h2 className="uppercase text-[28px] mb-[30px]">
+    <div className="max-w-[1450px] mx-auto pt-[50px] px-[12px] lg:px-[30px] 2xl:px-[0px] font-global">
+      <h2 className="uppercase text-[18px] text-center md:text-left md:text-[28px] mb-[30px]">
         <b>Н</b>аше оборудование
       </h2>
       <div className="hidden lg:grid grid-cols-3 gap-[20px]">
@@ -82,7 +82,7 @@ const Equipment = () => {
           return (
             <div
               key={index}
-              className="relative h-[252px] bg-cover flex items-center bg-center bg-no-repeat overflow-hidden z-2 shadow-xl"
+              className="relative h-[252px] bg-cover flex items-center overflow-hidden z-2 shadow-xl"
             >
               <img
                 src={item.bg_img}
