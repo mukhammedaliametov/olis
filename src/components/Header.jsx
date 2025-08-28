@@ -26,7 +26,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="max-w-[1450px] mx-auto py-[20px] px-[12px] lg:px-[30px] 2xl:px-[0px] flex items-center justify-between font-global text-[14px]">
+    <div className="max-w-[1450px] mx-auto py-[20px] px-[12px] lg:px-[30px] 2xl:px-[0px] flex items-center justify-between font-global text-[14px] z-999">
       <Link to={"/"}>
         <img
           src={Logo}
@@ -91,7 +91,7 @@ const Header = () => {
           <TfiMenuAlt className="text-[18px] text-white" />
         </div>
       </div>
-      <div className={`fixed top-0 w-full h-screen bg-[#FEAD04] text-white px-[20px] flex lg:hidden justify-center flex-col items-center text-center transition-all duration-500 ${nav ? 'left-0' : '-left-[1000px]'}`}>
+      <div className={`fixed top-0 w-full h-screen bg-[#FEAD04] text-white px-[20px] flex lg:hidden justify-center flex-col items-center text-center transition-all duration-500 z-999 ${nav ? 'left-0' : '-left-[1000px]'}`}>
         <IoMdClose className="text-[24px] mt-[27px] mr-[20px] absolute top-0 right-0" onClick={closeNav} />
         <div className="text-[17px] mt-[40px]">
           {menuItems.map((item, index) => {
