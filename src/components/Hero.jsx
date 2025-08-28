@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="w-full sm:w-[150px] lg:w-[490px] z-2 mt-[20px] md:mt-0">
             <h1 className="text-[28px]/[26px] lg:text-[36px]/[38px] w-full text-[#FEAD04] font-black">ТЕХНОЛОГИИ <p className="bg-[#F8F8F8] py-[15px] w-full sm:w-[440px]">И ОБОРУДОВАНИЕ</p></h1>
             <p className="w-full md:w-[310px] font-light text-[22px] md:text-[22px] border-t border-black pt-[10px] mt-[10px]">для очистки, переработки и контроля качества зерна</p>
-            <button className="py-[15px] px-[45px] bg-[#FEAD04] text-white font-bold mt-[20px] cursor-pointer opacity-75 hover:opacity-100">Оставить заявку</button>
+            <button className="py-[15px] px-[45px] bg-[#FEAD04] text-white font-bold mt-[20px] cursor-pointer opacity-75 hover:opacity-100 duration-300">Оставить заявку</button>
           </div>
         </div>
         <div className="w-full md:w-[750px] xl:w-[880px] 2xl:w-[1000px] md:ml-[-200px]  z-1">

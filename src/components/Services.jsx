@@ -16,7 +16,7 @@ const Services = () => {
         {img: Card6, name: 'Автоматизация'},
     ]
   return (
-    <div className="max-w-[1450px] mx-auto pt-[50px] px-[12px] lg:px-[30px] 2xl:px-[0px] mb-[600px]">
+    <div className="max-w-[1450px] mx-auto pt-[50px] px-[12px] lg:px-[30px] 2xl:px-[0px]">
       <h2 className="uppercase text-[18px] text-center md:text-left md:text-[28px] mb-[30px]">
         <b>У</b>слуги
       </h2>
