@@ -101,7 +101,7 @@ const Header = () => {
                 className="flex items-center justify-center gap-[5px] cursor-pointer my-[15px]"
               >
                 {item.link ? (
-                  <Link to={item.link}>{item.title}</Link>
+                  <Link to={item.link} onClick={closeNav}>{item.title}</Link>
                 ) : (
                   <span>{item.title}</span>
                 )}
