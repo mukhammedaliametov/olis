@@ -5,6 +5,8 @@ import Solutions from '../components/Solutions';
 import Services from '../components/Services';
 import Advantages from '../components/Advantages';
 import About from '../components/About';
+import Partners from '../components/Partners';
+import Form from '../components/Form';
 
 const Main = () => {
     return (
@@ -15,6 +17,8 @@ const Main = () => {
             <Services />
             <Advantages />
             <About />
+            <Partners />
+            <Form />
         </div>
     );
 };
