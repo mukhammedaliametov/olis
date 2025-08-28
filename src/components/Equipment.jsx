@@ -23,10 +23,10 @@ const Equipment = () => {
     {
       bg_img: CardBg1,
       icon: CardIcon1,
-      title: "Зерноочистительное оборудование",
+      title: "Зерноочиститель оборудование",
       img: CardImg1,
       w: 180,
-      top: '30px'
+      top: "30px",
     },
     {
       bg_img: CardBg2,
@@ -34,8 +34,8 @@ const Equipment = () => {
       title: "Оборудование для производства круп",
       img: CardImg2,
       w: 130,
-      top: '10px',
-      right: '20px'
+      top: "10px",
+      right: "20px",
     },
     {
       bg_img: CardBg3,
@@ -43,8 +43,8 @@ const Equipment = () => {
       title: "Лабораторное оборудование",
       img: CardImg3,
       w: 160,
-      top: '10px',
-      right: '20px'
+      top: "10px",
+      right: "20px",
     },
     {
       bg_img: CardBg4,
@@ -52,7 +52,7 @@ const Equipment = () => {
       title: "Оборудование для производства муки",
       img: CardImg4,
       w: 190,
-      top: '40px'
+      top: "40px",
     },
     {
       bg_img: CardBg5,
@@ -60,7 +60,7 @@ const Equipment = () => {
       title: "Транспортное и аспирационное оборудование",
       img: CardImg5,
       w: 250,
-      top: '25px'
+      top: "25px",
     },
     {
       bg_img: CardBg6,
@@ -68,7 +68,7 @@ const Equipment = () => {
       title: "Самотечное оборудование",
       img: CardImg6,
       w: 225,
-      top: '20px'
+      top: "20px",
     },
   ];
 
@@ -77,7 +77,7 @@ const Equipment = () => {
       <h2 className="uppercase text-[28px] mb-[30px]">
         <b>Н</b>аше оборудование
       </h2>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-[20px]">
+      <div className="hidden lg:grid grid-cols-3 gap-[20px]">
         {equipmentCards.map((item, index) => {
           return (
             <div
@@ -99,8 +99,32 @@ const Equipment = () => {
                   src={item.img}
                   alt="img"
                   className="absolute top-[20%] right-0"
-                  style={{ width: item.w, top: item.top, right: item.right}}
+                  style={{ width: item.w, top: item.top, right: item.right }}
                 />
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <div className="grid lg:hidden grid-cols-2 gap-[20px]">
+        {equipmentCards.map((item, index) => {
+          return (
+            <div
+              key={index}
+              className="relative bg-cover h-[270px] flex items-center bg-center bg-no-repeat overflow-hidden z-2 shadow-xl"
+            >
+              <img
+                src={item.bg_img}
+                alt="bg-img"
+                className="absolute top-0 left-0 w-full -z-2 h-full"
+              />
+              <div className="absolute top-0 left-0 w-full bg-[#ffffffbe] h-full -z-1 backdrop-blur-[2px]"></div>
+              <div className="flex items-center justify-center flex-col p-[5px]">
+                <div className="flex items-center flex-col justify-center bg-white p-[10px] text-center">
+                  <img src={item.icon} alt="icon" className="w-[20%]" />
+                  <p className="text-[10px] font-semibold">{item.title}</p>
+                </div>
+                <img src={item.img} alt="img" className={`w-[${item.w}] mt-[10px]`} />
               </div>
             </div>
           );
