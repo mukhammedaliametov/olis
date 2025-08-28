@@ -7,6 +7,7 @@ import Advantages from '../components/Advantages';
 import About from '../components/About';
 import Partners from '../components/Partners';
 import Form from '../components/Form';
+import News from '../components/News';
 
 const Main = () => {
     return (
@@ -19,6 +20,7 @@ const Main = () => {
             <About />
             <Partners />
             <Form />
+            <News />
         </div>
     );
 };
